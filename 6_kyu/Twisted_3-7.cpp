@@ -31,13 +31,14 @@ vector <int> sortTwisted37 (vector <int> numbers) {
 
 		for (int j = 0; j < value.length(); j++)
 		{
+			
 			if (value.at(j) == '3')
 			{
-				value.replace(j, j + 1 , "7");
+				value.replace(j, 1 , "7");
 			}
 			else if (value.at(j) == '7')
 			{
-				value.replace(j, j - 1, "3");
+				value.replace(j, 1 , "3");
 			}
 		}
 		trueValue = std::stoi(value);
@@ -53,11 +54,11 @@ vector <int> sortTwisted37 (vector <int> numbers) {
 		{
 			if (value.at(j) == '3')
 			{
-				value.replace(j, j + 1, "7");
+				value.replace(j, 1, "7");
 			}
 			else if (value.at(j) == '7')
 			{
-				value.replace(j, j + 1, "3");
+				value.replace(j, 1, "3");
 			}
 		}
 		trueValue = std::stoi(value);
